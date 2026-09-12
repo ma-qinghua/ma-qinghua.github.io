@@ -3,207 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="马清华的个人作品集：AI 应用、交互系统与教学实践。"
-    />
-    <meta name="theme-color" content="#f5f5ef" />
-    <title>马清华｜AI 应用与交互系统</title>
+    <meta name="description" content="马清华的个人网站：经历、项目、教学与生活记录。" />
+    <meta name="theme-color" content="#fbfbf8" />
+    <title>马清华｜个人网站</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">跳到主要内容</a>
-
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark">MQ</span>
-        <span>马清华</span>
-      </a>
+    <header class="site-header page-width">
+      <a class="name" href="#top">马清华</a>
       <nav aria-label="主导航">
-        <a class="active" href="#top">首页</a>
+        <a href="#about">关于</a>
+        <a href="#experience">经历</a>
         <a href="#projects">项目</a>
         <a href="#teaching">教学</a>
-        <a href="#lab">实验室</a>
-        <a href="#contact">联系</a>
+        <a href="#life">生活</a>
       </nav>
-      <a class="header-contact" href="mailto:hello@example.com">合作咨询 <span>↗</span></a>
+      <a class="email" href="mailto:hello@example.com">联系我 ↗</a>
     </header>
 
-    <main id="main">
-      <section id="top" class="hero section-shell">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> AI APPLICATIONS · 2026</p>
-          <h1>把复杂技术，<br /><em>做成可信的体验。</em></h1>
-          <p class="hero-intro">
-            我是马清华，一名专注于 AI 应用、智能硬件与数字体验的创作者。
-            我用工程化的方式把模型、数据和真实问题连接起来，也把其中的方法沉淀成可学习的内容。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">查看代表项目 <span>↓</span></a>
-            <a class="text-link" href="#contact">获取简历 <span>↗</span></a>
-          </div>
-        </div>
-
-        <aside class="hero-card reveal" aria-label="个人信息概览">
-          <div class="portrait" aria-hidden="true">
-            <span class="portrait-orbit orbit-one"></span>
-            <span class="portrait-orbit orbit-two"></span>
-            <span class="portrait-dot dot-one"></span>
-            <span class="portrait-dot dot-two"></span>
-            <div class="portrait-initials">MQH</div>
-          </div>
-          <div class="hero-card-meta">
-            <div>
-              <span class="meta-label">CURRENT FOCUS</span>
-              <strong>AI 应用 · 视觉智能 · 教学设计</strong>
-            </div>
-            <span class="availability"><i></i> 可联系</span>
-          </div>
-        </aside>
-      </section>
-
-      <section class="signal-band">
-        <div class="section-shell signal-grid">
-          <div><strong>03</strong><span>代表性项目</span></div>
-          <div><strong>06+</strong><span>可复用技术模块</span></div>
-          <div><strong>∞</strong><span>持续学习与分享</span></div>
-          <p>以产品思维做技术<br />以工程能力做交付</p>
+    <main id="top">
+      <section class="hero page-width">
+        <p class="kicker">PERSONAL WEBSITE · 2026</p>
+        <h1>AI 应用与工程实践。</h1>
+        <p class="hero-summary">我是马清华。我关心技术如何解决真实问题，也持续记录项目、学习和生活中值得分享的部分。</p>
+        <div class="hero-details">
+          <span><i></i> 目前开放交流</span>
+          <a href="https://github.com/ma-qinghua" target="_blank" rel="noreferrer">GitHub @ma-qinghua ↗</a>
+          <a href="#contact">简历与联系方式 ↓</a>
         </div>
       </section>
 
-      <section id="projects" class="section-shell projects-section">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow"><span></span> SELECTED WORK</p>
-            <h2>代表项目</h2>
-          </div>
-          <p>以下内容为首版展示文案。<br />后续可替换为真实项目、演示视频与代码仓库。</p>
-        </div>
-
-        <div class="project-list">
-          <article class="project-card card-featured reveal">
-            <div class="project-visual visual-one" aria-hidden="true">
-              <div class="visual-topline"><span>VISION / 01</span><span>LIVE</span></div>
-              <div class="scanner">
-                <div class="scanner-frame"><i></i><i></i><i></i><i></i></div>
-                <div class="scanner-line"></div>
-                <div class="scanner-object"></div>
-              </div>
-              <div class="visual-readout">OBJECT DETECTED<br /><b>98.4%</b></div>
-            </div>
-            <div class="project-content">
-              <div class="project-number">01 / 03</div>
-              <p class="project-type">视觉智能 · 端侧应用</p>
-              <h3>智见 / 视觉推理工作台</h3>
-              <p>
-                为复杂场景设计一套从数据采集、模型推理到结果复核的可视化工作流，帮助非算法用户理解并使用视觉模型。
-              </p>
-              <div class="tag-row"><span>Computer Vision</span><span>Edge AI</span><span>UX System</span></div>
-              <a class="project-link" href="#contact">查看案例详情 <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card card-small reveal">
-            <div class="project-visual visual-two" aria-hidden="true">
-              <div class="chat-window">
-                <span class="chat-label">LEARNING COPILOT</span>
-                <div class="bubble bubble-user">帮我拆解这道题的思路</div>
-                <div class="bubble bubble-ai"><i></i><i></i><i></i></div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-number">02 / 03</div>
-              <p class="project-type">生成式 AI · 教学辅助</p>
-              <h3>知学 / AI 学习教练</h3>
-              <p>围绕真实学习路径设计的 AI 辅助工具：不只给答案，而是建立问题拆解、反馈与复盘机制。</p>
-              <div class="tag-row"><span>LLM</span><span>Learning Design</span></div>
-              <a class="project-link" href="#lab">体验概念原型 <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card card-small reveal">
-            <div class="project-visual visual-three" aria-hidden="true">
-              <div class="data-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-              <div class="data-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <div class="data-status">SYSTEM<br /><b>STABLE</b></div>
-            </div>
-            <div class="project-content">
-              <div class="project-number">03 / 03</div>
-              <p class="project-type">数据系统 · 智能运维</p>
-              <h3>脉络 / 数据监测中台</h3>
-              <p>将多源数据转为可行动的信息面板，支持异常发现、趋势判断和面向业务的轻量决策。</p>
-              <div class="tag-row"><span>Data Flow</span><span>Dashboard</span></div>
-              <a class="project-link" href="#contact">查看案例详情 <span>↗</span></a>
-            </div>
-          </article>
+      <section id="about" class="section page-width split-section">
+        <div class="section-label">01 / 关于</div>
+        <div class="section-body about-copy">
+          <p class="large-copy">用清晰的方法，把复杂的技术做成真正可用的东西。</p>
+          <p>这里将作为个人工作的长期索引：展示做过的项目、沉淀的方法，以及工作之外持续投入的兴趣。首版内容为占位文字，后续可按真实经历逐项替换。</p>
         </div>
       </section>
 
-      <section id="teaching" class="teaching-section">
-        <div class="section-shell teaching-layout">
-          <div class="teaching-intro reveal">
-            <p class="eyebrow light"><span></span> LEARNING WITH ME</p>
-            <h2>把“会用”，<br />变成“会做”。</h2>
-            <p>面向希望进入 AI 应用与智能系统领域的学习者，分享从问题理解到可交付 Demo 的实践方法。</p>
-            <a class="button button-light" href="#contact">了解学习方向 <span>↓</span></a>
-          </div>
-          <ol class="learning-path reveal">
-            <li><span>01</span><div><h3>建立问题框架</h3><p>从真实需求出发，而不是从工具清单出发。</p></div></li>
-            <li><span>02</span><div><h3>完成最小原型</h3><p>用可以验证的 Demo，快速检验技术和方案。</p></div></li>
-            <li><span>03</span><div><h3>工程化交付</h3><p>关注可维护性、体验与真实使用环境。</p></div></li>
-          </ol>
+      <section id="experience" class="section page-width split-section">
+        <div class="section-label">02 / 经历</div>
+        <div class="section-body timeline">
+          <article><time>2026 — 至今</time><div><h2>AI 应用与工程实践</h2><p>聚焦模型能力、实际场景与用户体验之间的连接。（经历待补充）</p></div></article>
+          <article><time>2024 — 2026</time><div><h2>智能系统与产品原型</h2><p>从需求拆解、数据处理到可验证的最小 Demo。（经历待补充）</p></div></article>
+          <article><time>2022 — 2024</time><div><h2>学习与技术积累</h2><p>持续探索软硬件协同、视觉智能和工程化交付。（经历待补充）</p></div></article>
         </div>
       </section>
 
-      <section id="lab" class="section-shell lab-section">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow"><span></span> INTERACTION LAB</p>
-            <h2>实验室</h2>
+      <section id="projects" class="section page-width split-section">
+        <div class="section-label">03 / 项目</div>
+        <div class="section-body">
+          <p class="section-intro">挑选少量可代表问题解决方式的项目。每一项后续可补充演示视频、代码与完整复盘。</p>
+          <div class="project-list">
+            <article class="project-row"><span>01</span><div><h2>视觉推理工作台</h2><p>把数据采集、模型推理和结果检查收拢到一处，让非算法用户也能理解和使用模型。</p></div><a href="#contact">案例待补充 ↗</a></article>
+            <article class="project-row"><span>02</span><div><h2>AI 学习教练</h2><p>围绕学习过程设计反馈与复盘，而不只是给出一个答案。</p></div><a href="#contact">案例待补充 ↗</a></article>
+            <article class="project-row"><span>03</span><div><h2>数据监测面板</h2><p>将分散的数据转化为容易理解、能支持行动的日常信息。</p></div><a href="#contact">案例待补充 ↗</a></article>
           </div>
-          <p>先用前端概念原型呈现交互。<br />后续可接入你电脑上的真实模型服务。</p>
         </div>
-        <div class="lab-console reveal">
-          <div class="console-copy">
-            <span class="console-label">PORTFOLIO GUIDE / BETA</span>
-            <h3>你想从哪个角度认识我？</h3>
-            <p>选择一个关键词，查看这版站点为不同访客准备的内容路径。</p>
-            <div class="prompt-options" role="group" aria-label="选择访客身份">
-              <button class="prompt-button selected" data-answer="hr">我是招聘方</button>
-              <button class="prompt-button" data-answer="student">我是学习者</button>
-              <button class="prompt-button" data-answer="partner">我是合作伙伴</button>
-            </div>
+      </section>
+
+      <section id="teaching" class="section page-width split-section">
+        <div class="section-label">04 / 教学</div>
+        <div class="section-body">
+          <p class="large-copy compact">我愿意分享从“理解问题”到“做出作品”的过程。</p>
+          <div class="plain-grid">
+            <article><h2>问题框架</h2><p>从真实需求出发，明确什么值得做、什么暂时不做。</p></article>
+            <article><h2>最小原型</h2><p>用一个可以运行的 Demo，快速检验技术方案。</p></article>
+            <article><h2>工程交付</h2><p>关注稳定性、维护成本与最终使用者的感受。</p></article>
           </div>
-          <div class="console-response" aria-live="polite">
-            <span class="response-label">RESPONSE</span>
-            <p id="lab-answer">建议先看「代表项目」：每个案例都按问题、方法、我的贡献与结果组织，方便快速判断匹配度。</p>
-            <a id="lab-link" href="#projects">进入项目案例 <span>→</span></a>
+        </div>
+      </section>
+
+      <section id="life" class="section page-width split-section life-section">
+        <div class="section-label">05 / 个人生活</div>
+        <div class="section-body">
+          <p class="large-copy compact">工作之外，也给好奇心留一点位置。</p>
+          <p class="section-intro">这一页不只是一份履历。未来会记录阅读、运动、旅行、摄影或任何长期影响我的事物。</p>
+          <div class="life-list">
+            <article><span>01</span><h2>阅读与手记</h2><p>近期读到的内容与自己的思考。（待补充）</p></article>
+            <article><span>02</span><h2>运动与户外</h2><p>让身体保持节奏，也让思考离开屏幕。（待补充）</p></article>
+            <article><span>03</span><h2>观察与记录</h2><p>日常见闻、照片和未完成的想法。（待补充）</p></article>
           </div>
         </div>
       </section>
 
       <section id="contact" class="contact-section">
-        <div class="section-shell contact-layout reveal">
-          <div>
-            <p class="eyebrow"><span></span> LET'S CONNECT</p>
-            <h2>有一个值得解决的问题？<br /><em>我们聊聊。</em></h2>
-          </div>
+        <div class="page-width contact-content">
+          <p class="kicker">CONTACT</p>
+          <h2>如果你有值得解决的问题，欢迎联系。</h2>
           <div class="contact-links">
-            <a href="mailto:hello@example.com"><span>邮箱</span><strong>hello@example.com</strong><i>↗</i></a>
-            <a href="https://github.com/ma-qinghua" target="_blank" rel="noreferrer"><span>GitHub</span><strong>@ma-qinghua</strong><i>↗</i></a>
-            <a href="#top"><span>微信</span><strong>二维码待补充</strong><i>↗</i></a>
+            <a href="mailto:hello@example.com"><span>邮箱</span><strong>hello@example.com</strong></a>
+            <a href="https://github.com/ma-qinghua" target="_blank" rel="noreferrer"><span>GitHub</span><strong>@ma-qinghua</strong></a>
+            <a href="#top"><span>微信</span><strong>二维码待补充</strong></a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer section-shell">
-      <span>© <span id="year"></span> Ma Qinghua</span>
-      <span>Built for clarity, curiosity &amp; impact.</span>
-      <a href="#top">回到顶部 ↑</a>
-    </footer>
-
-    <script src="app.js"></script>
+    <footer class="site-footer page-width"><span>© 2026 Ma Qinghua</span><a href="#top">回到顶部 ↑</a></footer>
   </body>
 </html>
