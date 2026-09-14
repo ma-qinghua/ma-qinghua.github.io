@@ -1,32 +1,66 @@
 export const projects = [
   {
-    id: "infrared-core",
+    id: "face-attendance",
     number: "01",
-    title: "红外成像与机芯控制系统",
-    summary: "围绕红外机芯成像链路、探测器控制、标定、NUC、ISP 与通信协议进行完整工程开发，将底层硬件能力整理为可调试、可验证的控制链路。",
-    image: "./assets/images/project-infrared.svg",
-    technologies: ["C/C++", "Infrared", "ISP", "FPGA", "Embedded"],
-    highlights: ["探测器与底层硬件控制", "NUC / 标定链路", "串口控制协议", "ISP 图像算法调试"],
-    link: "./projects/infrared-core.html"
+    title: "智能人脸识别考勤终端",
+    subtitle: "Face Recognition Attendance System",
+    summary: "基于 FPGA + ARM 架构完成智能人脸识别考勤终端，从人脸检测、活体检测、人脸识别，到 Qt 终端、后台系统、微信小程序和数据可视化形成完整闭环。",
+    image: "./assets/images/project-face.svg",
+    badge: "AI + DEVICE",
+    technologies: ["PyTorch", "Face Recognition", "Qt", "OpenCV", "Linux", "FPGA + ARM"],
+    results: [
+      ["99%+", "识别精度"],
+      ["< 1s", "识别时间"],
+      ["5 台", "实体样机"]
+    ],
+    link: "./projects/face-attendance.html"
   },
   {
     id: "edge-ai",
     number: "02",
-    title: "边缘 AI 视觉系统",
-    summary: "将视觉模型从 PC Demo 部署至实际嵌入式平台，完成模型推理、摄像头输入、后处理和 UI 的完整集成，重点解决“模型能跑”和“产品能用”之间的差距。",
+    title: "边缘 AI 目标检测与分割系统",
+    subtitle: "Detection · Segmentation · Tracking",
+    summary: "面向嵌入式视觉设备完成目标检测、图像分割和目标跟踪算法的部署与优化，包括模型转换、推理接口、图像预处理/后处理、性能优化及 Linux 系统集成。",
     image: "./assets/images/project-edge-ai.svg",
-    technologies: ["Computer Vision", "Linux", "Qt", "RKNN", "Edge AI"],
-    highlights: ["模型边缘部署", "实时视频链路", "推理与后处理", "Qt 应用集成"],
+    badge: "EDGE AI",
+    technologies: ["YOLO", "Segmentation", "Tracking", "Linux", "RK Platform", "Model Deployment"],
+    results: [
+      ["20 FPS", "RK 平台推理"],
+      ["3 类", "检测 / 分割 / 跟踪"],
+      ["ARM", "边缘设备"]
+    ],
     link: "./projects/edge-ai.html"
   },
   {
-    id: "local-code-ai",
+    id: "infrared-core",
     number: "03",
-    title: "本地代码 AI 工作台",
-    summary: "围绕 C/C++ 与嵌入式开发场景搭建本地代码模型环境，探索代码理解、知识管理、GPU 推理与后续 Agent 化开发工具。",
-    image: "./assets/images/project-llm.svg",
-    technologies: ["LLM", "Qwen", "PyTorch", "CUDA", "Developer Tools"],
-    highlights: ["本地模型部署", "GPU 推理", "代码上下文管理", "AI 开发工具"],
-    link: "./projects/code-ai.html"
+    title: "制冷 / 非制冷红外机芯嵌入式系统",
+    subtitle: "Cooled & Uncooled Infrared Core",
+    summary: "参与红外机芯的软件开发与系统联调，覆盖探测器控制、图像链路、通信协议、标定流程、底层接口以及红外场景下的 AI 算法部署。",
+    image: "./assets/images/project-infrared.svg",
+    badge: "INFRARED",
+    technologies: ["C/C++", "Infrared", "ISP", "NUC", "Calibration", "UART / SPI / I²C"],
+    results: [
+      ["C / C++", "核心开发语言"],
+      ["ISP", "图像链路"],
+      ["AI", "红外视觉部署"]
+    ],
+    link: "./projects/infrared-core.html"
+  },
+  {
+    id: "zynq-face",
+    number: "04",
+    title: "ZYNQ 人脸检测硬件加速系统",
+    subtitle: "ZYNQ-7020 · PS/PL Co-design",
+    summary: "基于 ZYNQ-7020 搭建图像采集、处理和显示系统，在 PL 侧实现 OV5640 图像采集与人脸检测硬件加速，并通过 PS/PL 协同完成实时显示。",
+    image: "./assets/images/project-zynq.svg",
+    badge: "FPGA + AI",
+    technologies: ["ZYNQ-7020", "Verilog", "OV5640", "PS / PL", "Computer Vision", "FPGA"],
+    results: [
+      ["OV5640", "图像采集"],
+      ["PL", "硬件加速"],
+      ["PS/PL", "协同处理"]
+    ],
+    link: "./projects/zynq-face.html"
   }
 ];

@@ -1,10 +1,48 @@
-.eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--text-muted); font-size: 12px; font-weight: 700; letter-spacing: .14em; }
-.eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--primary); }
-.button { min-height: 48px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); font-size: 14px; font-weight: 650; transition: transform .2s ease,box-shadow .2s ease,background .2s ease; }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text-3);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+.eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: var(--blue);
+}
+.eyebrow-light { color: #9aa8bb; }
+.button {
+  min-height: 48px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
 .button:hover { transform: translateY(-2px); }
-.button-primary { background: var(--dark); color: white; }
-.button-primary:hover { box-shadow: var(--shadow); }
-.button-secondary { background: white; border: 1px solid var(--border-strong); }
-.tag { padding: 5px 9px; border-radius: 999px; background: var(--surface-soft); color: var(--text-secondary); font-size: 12px; }
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease,transform .6s ease; }
+.button-primary { color: white; background: var(--dark); box-shadow: 0 8px 24px rgba(16,24,40,.12); }
+.button-primary:hover { background: #050a13; }
+.button-secondary { background: white; border: 1px solid var(--line); }
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  border-radius: 999px;
+  background: #f1f4f8;
+  color: #667085;
+  font-size: 11px;
+  font-weight: 650;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .65s ease, transform .65s ease;
+}
 .reveal.visible { opacity: 1; transform: none; }

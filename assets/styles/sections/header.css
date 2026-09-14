@@ -1,9 +1,57 @@
-.site-header { position: sticky; top: 0; z-index: 100; height: 72px; background: rgba(247,248,250,.84); border-bottom: 1px solid rgba(229,233,240,.85); backdrop-filter: blur(18px); }
-.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 800; letter-spacing: -.03em; }
-.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: var(--dark); color: white; font-size: 12px; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 72px;
+  background: rgba(245,247,251,.88);
+  border-bottom: 1px solid rgba(227,232,239,.85);
+  backdrop-filter: blur(18px);
+}
+.header-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--dark);
+  color: white;
+  font-size: 11px;
+}
 .main-nav { display: flex; gap: 28px; }
-.main-nav a { color: var(--text-secondary); font-size: 14px; transition: color .2s ease; }
-.main-nav a:hover { color: var(--primary); }
-.header-contact { padding: 10px 17px; border-radius: 10px; background: var(--dark); color: white; font-size: 14px; font-weight: 650; }
-.menu-button { display: none; width: 42px; height: 42px; border: 1px solid var(--border); border-radius: 10px; background: white; cursor: pointer; }
+.main-nav a {
+  color: #5f6b7b;
+  font-size: 13px;
+  font-weight: 600;
+}
+.main-nav a:hover { color: var(--text); }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.header-contact {
+  padding: 10px 16px;
+  border-radius: 9px;
+  color: white;
+  background: var(--dark);
+  font-size: 13px;
+  font-weight: 700;
+}
+.menu-button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: white;
+  cursor: pointer;
+}

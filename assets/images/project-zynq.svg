@@ -10,13 +10,13 @@
   </defs>
   <rect width="900" height="620" fill="url(#g)"/>
   <rect width="900" height="620" fill="url(#p)"/>
-  <circle cx="720" cy="110" r="180" fill="#38bdf8" opacity=".12"/>
-  <circle cx="140" cy="520" r="220" fill="#38bdf8" opacity=".08"/>
-  <text x="70" y="92" fill="#94a3b8" font-size="22" font-family="Arial" letter-spacing="5">EDGE AI / VISION</text>
-  <text x="70" y="300" fill="#38bdf8" font-size="120" font-weight="700" font-family="Arial">20 FPS</text>
-  <text x="70" y="380" fill="#ffffff" font-size="40" font-weight="700" font-family="Arial">Detection · Segmentation</text>
-  <text x="70" y="425" fill="#94a3b8" font-size="24" font-family="Arial">RK Platform · Linux</text>
-  <rect x="70" y="500" width="180" height="4" rx="2" fill="#38bdf8"/>
+  <circle cx="720" cy="110" r="180" fill="#22c55e" opacity=".12"/>
+  <circle cx="140" cy="520" r="220" fill="#22c55e" opacity=".08"/>
+  <text x="70" y="92" fill="#94a3b8" font-size="22" font-family="Arial" letter-spacing="5">ZYNQ / ACCELERATOR</text>
+  <text x="70" y="300" fill="#22c55e" font-size="120" font-weight="700" font-family="Arial">PS/PL</text>
+  <text x="70" y="380" fill="#ffffff" font-size="40" font-weight="700" font-family="Arial">Face Detection</text>
+  <text x="70" y="425" fill="#94a3b8" font-size="24" font-family="Arial">ZYNQ-7020 · OV5640</text>
+  <rect x="70" y="500" width="180" height="4" rx="2" fill="#22c55e"/>
   <rect x="265" y="500" width="80" height="4" rx="2" fill="#475569"/>
   <rect x="360" y="500" width="110" height="4" rx="2" fill="#334155"/>
 </svg>

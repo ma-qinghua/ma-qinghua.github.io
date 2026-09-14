@@ -1,3 +1,15 @@
-.site-footer { padding: 26px 0; border-top: 1px solid rgba(255,255,255,.08); background: #101828; color: #778397; }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 12px; }
-.footer-inner strong { color: white; }
+.site-footer {
+  padding: 24px 0;
+  background: var(--dark);
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: #78869b;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  font-size: 10px;
+}
+.footer-inner div { display: flex; gap: 18px; align-items: center; }
+.footer-inner strong { color: white; font-size: 12px; }
+.footer-inner a:hover { color: white; }

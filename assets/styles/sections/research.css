@@ -1,0 +1,45 @@
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  margin-bottom: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: white;
+}
+.metrics-grid article {
+  padding: 28px;
+  border-right: 1px solid var(--line);
+}
+.metrics-grid article:last-child { border-right: none; }
+.metrics-grid strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 30px;
+  letter-spacing: -.05em;
+}
+.metrics-grid span { color: var(--text-3); font-size: 11px; }
+.research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.research-panel {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: white;
+}
+.panel-label {
+  color: var(--blue);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+.research-panel h3 { margin: 10px 0 22px; font-size: 23px; }
+.research-panel li {
+  padding: 15px 0;
+  border-top: 1px solid var(--line);
+}
+.research-panel li strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+.research-panel li span { color: var(--text-3); font-size: 11px; }

@@ -1,40 +1,72 @@
-@media (max-width: 960px) {
-  .main-nav { position: fixed; inset: 82px 20px auto 20px; display: none; flex-direction: column; gap: 0; padding: 12px; border: 1px solid var(--border); border-radius: 18px; background: rgba(255,255,255,.98); box-shadow: var(--shadow); }
+@media (max-width: 1050px) {
+  .capability-grid { grid-template-columns: repeat(3, 1fr); }
+  .about-flow { grid-template-columns: 1fr 1fr; }
+  .about-flow > i { display: none; }
+}
+@media (max-width: 900px) {
+  .main-nav {
+    display: none;
+    position: fixed;
+    left: 18px;
+    right: 18px;
+    top: 80px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    background: rgba(255,255,255,.97);
+    box-shadow: var(--shadow);
+  }
   .main-nav.open { display: flex; }
   .main-nav a { padding: 12px; }
   .menu-button { display: block; }
   .header-contact { display: none; }
-  .hero-grid,.writing-grid,.cooperation-box,.contact-grid { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: repeat(2,1fr); }
-  .about-grid article:nth-child(2) { border-right: 0; }
-  .about-grid article:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
-  .capability-grid { grid-template-columns: repeat(2,1fr); }
+  .hero-grid,
+  .project-card,
+  .writing-layout,
+  .cooperation-card,
+  .contact-grid { grid-template-columns: 1fr; }
+  .hero-panel { min-height: 410px; }
+  .project-card { min-height: 0; }
+  .project-visual { min-height: 290px; }
+  .metrics-grid { grid-template-columns: 1fr 1fr; }
+  .metrics-grid article:nth-child(2) { border-right: none; }
+  .metrics-grid article:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 }
-@media (max-width: 760px) {
-  .page-width { width: calc(100% - 30px); }
-  .section { padding: 72px 0; }
-  .section-header { grid-template-columns: 1fr; gap: 12px; margin-bottom: 36px; }
-  .hero { padding: 72px 0 64px; }
-  .hero h1 { font-size: 44px; }
-  .hero-profile { min-height: 350px; padding: 26px; }
-  .project-card { grid-template-columns: 1fr; }
+@media (max-width: 720px) {
+  .page-width { width: min(calc(100% - 30px), var(--page-width)); }
+  .section { padding: 76px 0; }
+  .section-heading { grid-template-columns: 1fr; gap: 12px; margin-bottom: 36px; }
+  .hero { padding: 76px 0 66px; }
+  .hero-copy h1 { font-size: 44px; }
+  .hero-tech-grid { grid-template-columns: 1fr; }
+  .about-flow,
+  .capability-grid,
+  .metrics-grid,
+  .research-grid { grid-template-columns: 1fr; }
+  .metrics-grid article { border-right: none; border-bottom: 1px solid var(--line); }
+  .metrics-grid article:last-child { border-bottom: none; }
   .project-content { padding: 30px 24px; }
-  .project-image { min-height: 260px; }
-  .capability-grid,.about-grid { grid-template-columns: 1fr; }
-  .about-grid article { border-right: 0; border-bottom: 1px solid var(--border); }
-  .about-grid article:last-child { border-bottom: 0; }
-  .timeline-item { grid-template-columns: 1fr; gap: 10px; padding-left: 30px; }
-  .timeline-item::before { left: 5px; }
-  .timeline-item time { text-align: left; }
-  .timeline-body { padding-left: 0; }
-  .timeline-body::before { left: -30px; }
-  .article { grid-template-columns: 1fr auto; }
-  .article time { display: none; }
-  .cooperation-box { padding: 32px 24px; }
-  .footer-inner { flex-direction: column; align-items: flex-start; }
+  .project-results { grid-template-columns: 1fr; }
+  .project-results div,
+  .project-results div:nth-child(2),
+  .project-results div:last-child {
+    padding: 12px 0;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .project-results div:last-child { border-bottom: none; }
+  .experience-item { grid-template-columns: 1fr; gap: 10px; padding-left: 18px; }
+  .experience-item time { text-align: left; }
+  .experience-body { padding-left: 20px; }
+  .cooperation-card { padding: 30px 24px; }
+  .footer-inner,
+  .footer-inner div { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
-  .hero h1 { font-size: 39px; }
-  .hero-actions { flex-direction: column; }
+  .hero-actions-row { flex-direction: column; }
   .button { width: 100%; }
+  .article-row { grid-template-columns: 1fr auto; }
+  .article-row time { display: none; }
 }

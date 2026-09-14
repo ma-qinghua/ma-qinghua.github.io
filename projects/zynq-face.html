@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>边缘 AI 目标检测与分割系统｜马清华</title>
+  <title>ZYNQ 人脸检测硬件加速系统｜马清华</title>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="../assets/styles/project-detail.css"/>
 </head>
@@ -19,30 +19,30 @@
       <div class="page-width">
         <a class="detail-back" href="../index.html#projects">← Back to projects</a>
         <p class="eyebrow">PROJECT CASE</p>
-        <h1>边缘 AI 目标检测与分割系统</h1>
-        <p class="detail-lead">将视觉模型真正部署到嵌入式设备</p>
-        <div class="detail-cover"><img src="../assets/images/project-edge-ai.svg" alt="边缘 AI 目标检测与分割系统"/></div>
+        <h1>ZYNQ 人脸检测硬件加速系统</h1>
+        <p class="detail-lead">基于 ZYNQ-7020 的图像采集、硬件加速与实时显示</p>
+        <div class="detail-cover"><img src="../assets/images/project-zynq.svg" alt="ZYNQ 人脸检测硬件加速系统"/></div>
       </div>
     </section>
     <section class="section">
       <div class="page-width detail-grid">
         <aside class="detail-side">
-          <span>ROLE</span><strong>算法部署 / 嵌入式开发</strong>
-          <span>PERIOD</span><strong>2025 — 2026</strong>
-          <span>STACK</span><strong>YOLO · Segmentation · Tracking · Linux · RK Platform</strong>
+          <span>ROLE</span><strong>FPGA / 视觉开发</strong>
+          <span>PERIOD</span><strong>2023.01 — 2023.03</strong>
+          <span>STACK</span><strong>ZYNQ-7020 · Verilog · OV5640 · PS / PL</strong>
         </aside>
         <div class="detail-content">
           <section>
             <h2>项目概述</h2>
-            <p>面向红外及边缘视觉设备，将目标检测、分割和跟踪算法从训练/验证环境部署到瑞芯微等 ARM 平台，重点处理模型转换、推理接口、前后处理、性能优化和系统集成。</p>
+            <p>基于 ZYNQ-7020 搭建图像采集、处理、存储与显示系统，在 PL 侧完成 OV5640 图像采集和人脸检测硬件加速，并通过 PS/PL 协同实现实时结果显示。</p>
           </section>
           <section>
             <h2>主要工作</h2>
-            <ul class="detail-list"><li>视觉模型部署与推理链路集成</li><li>目标检测、分割、跟踪算法适配</li><li>图像预处理与结果后处理</li><li>瑞芯微平台性能分析与优化</li><li>Linux 系统环境与设备端联调</li></ul>
+            <ul class="detail-list"><li>OV5640 摄像头图像采集控制</li><li>ZYNQ PL 侧人脸检测算法硬件化设计</li><li>PS / PL 协同数据处理</li><li>实时图像结果显示与系统调试</li></ul>
           </section>
           <section>
             <h2>结果与产出</h2>
-            <ul class="detail-list"><li>在瑞芯微平台实现约 20 FPS 运行速度</li><li>形成检测 / 分割 / 跟踪多类视觉能力</li><li>完成模型与设备应用链路集成</li></ul>
+            <ul class="detail-list"><li>完成 OV5640 图像采集</li><li>实现硬件加速的人脸检测</li><li>完成实时图像显示系统</li></ul>
           </section>
         </div>
       </div>

@@ -1,9 +1,5 @@
 export function initReveal() {
-  const elements = document.querySelectorAll(".reveal");
-  if (!("IntersectionObserver" in window)) {
-    elements.forEach(el => el.classList.add("visible"));
-    return;
-  }
+  const items = document.querySelectorAll(".reveal");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
@@ -11,5 +7,6 @@ export function initReveal() {
       observer.unobserve(entry.target);
     });
   }, { threshold: 0.08 });
-  elements.forEach(el => observer.observe(el));
+
+  items.forEach(item => observer.observe(item));
 }

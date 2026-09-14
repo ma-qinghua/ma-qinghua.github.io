@@ -1,6 +1,26 @@
 export const articles = [
-  { date: "2026.09", title: "红外机芯中的 NUC 到底解决什么问题？", category: "Infrared · Imaging", url: "./articles/nuc.html" },
-  { date: "2026.08", title: "从 PC Demo 到 RK 平台：模型部署真正困难在哪里", category: "Edge AI · Engineering", url: "./articles/edge-ai.html" },
-  { date: "2026.08", title: "如何定位一个 SPI 卡死问题", category: "Embedded · Debug", url: "./articles/spi-debug.html" },
-  { date: "2026.07", title: "本地部署代码大模型，到底有什么实际价值", category: "LLM · Developer Tools", url: "./articles/local-code-ai.html" }
+  {
+    date: "2026",
+    title: "制冷与非制冷红外机芯：嵌入式软件到底在做什么？",
+    category: "Infrared · Embedded",
+    url: "./articles/infrared-core.html"
+  },
+  {
+    date: "2026",
+    title: "目标检测模型从 PC 到 RK 平台：真正困难的环节",
+    category: "Edge AI · Deployment",
+    url: "./articles/edge-ai-deployment.html"
+  },
+  {
+    date: "2026",
+    title: "从 UART / SPI / I²C 到设备协议：嵌入式调试方法",
+    category: "Embedded · Debug",
+    url: "./articles/embedded-debug.html"
+  },
+  {
+    date: "2026",
+    title: "人脸识别考勤终端：从模型到整机系统的完整链路",
+    category: "Computer Vision · Product",
+    url: "./articles/face-system.html"
+  }
 ];
