@@ -1,18 +1,53 @@
-# 马清华的个人网站
+# 马清华个人网站
 
-这是一个可直接部署到 GitHub Pages 的极简个人网站，用于呈现经历、项目、教学与个人生活，无需安装 Node.js 或构建工具。
+一个不依赖前端框架的模块化静态个人作品集网站，用于：
 
-## 本地预览
+- 个人成果展示
+- 求职与简历入口
+- 技术项目合作 / 接单
+- 技术文章与成长记录
 
-直接双击 `index.html` 即可在浏览器中查看，或使用任意本地静态服务器。
+## 目录职责
 
-## 发布
+- `index.html`：只负责首页结构和模块顺序
+- `assets/styles/`：基础样式、布局、公共组件、各 section 样式
+- `assets/js/data/`：项目、经历、文章、能力的数据
+- `assets/js/sections/`：把数据渲染为页面模块
+- `projects/`：代表项目详情页
+- `articles/`：技术文章详情页
 
-将本目录内的 `index.html`、`styles.css` 和 `favicon.svg` 上传到 GitHub 仓库根目录。仓库已开启 GitHub Pages 后，访问 `https://ma-qinghua.github.io` 即可看到网站。
+## 推荐运行方式
 
-## 后续替换清单
+由于页面使用 ES Module，不建议直接双击 `index.html` 用 `file://` 打开。
 
-- `index.html`：姓名、个人简介、经历、项目、教学、个人生活、邮箱和微信信息
-- `index.html`：把各项目的 `href="#contact"` 替换成项目页面、GitHub 仓库或视频链接
-- `index.html`：把“实验室”概念原型接到真实模型服务 URL
-- 后续添加 `assets/images/` 存放个人头像、项目截图和二维码
+### Python
+
+```bash
+python -m http.server 8000
+```
+
+浏览器访问：`http://localhost:8000`
+
+### VS Code
+
+安装 Live Server 后，从 `index.html` 启动。
+
+## 日常维护
+
+新增项目：编辑 `assets/js/data/projects.js`。
+
+新增经历：编辑 `assets/js/data/experience.js`。
+
+新增文章：编辑 `assets/js/data/articles.js`，并在 `articles/` 创建正文页面。
+
+调整全站主色：修改 `assets/styles/base.css` 的 `--primary`。
+
+调整某模块样式：进入 `assets/styles/sections/` 对应 CSS 文件。
+
+## 需要替换的占位内容
+
+1. `hello@example.com` 换成真实邮箱
+2. GitHub 地址确认是否为真实账号
+3. 将真实简历命名为 `resume.pdf` 放在项目根目录
+4. 替换 `assets/images/` 中的项目占位图
+5. 补充项目详情页与文章正文

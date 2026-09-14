@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+<rect width="1200" height="760" fill="#111827"/>
+<rect x="120" y="100" width="960" height="560" rx="28" fill="#0d1525" stroke="#31415c"/>
+<rect x="160" y="145" width="230" height="470" rx="18" fill="#151f32"/>
+<rect x="430" y="145" width="610" height="210" rx="18" fill="#15243f"/>
+<rect x="430" y="390" width="610" height="225" rx="18" fill="#121c2e"/>
+<path d="M500 530 L570 460 L640 500 L720 420 L800 455 L910 370" fill="none" stroke="#6e93ff" stroke-width="10"/>
+<circle cx="910" cy="370" r="15" fill="#6e93ff"/>
+<text x="470" y="205" fill="#cbd6e7" font-size="34" font-family="Arial">LOCAL CODE AI</text>
+</svg>

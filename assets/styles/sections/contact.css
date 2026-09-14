@@ -1,0 +1,10 @@
+.contact { padding: 90px 0; background: #101828; color: white; }
+.contact-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: end; }
+.contact .eyebrow { color: #98a6bc; }
+.contact h2 { max-width: 720px; margin: 20px 0; font-size: clamp(38px,5vw,62px); line-height: 1.15; letter-spacing: -.05em; }
+.contact p { max-width: 580px; color: #98a6bc; }
+.contact-links { display: grid; gap: 10px; }
+.contact-links a { padding: 18px 20px; display: flex; justify-content: space-between; gap: 20px; border: 1px solid rgba(255,255,255,.11); border-radius: 14px; color: #d6ddea; }
+.contact-links a:hover { background: rgba(255,255,255,.05); }
+.contact-links span { color: #8592a7; font-size: 12px; }
+.contact-links strong { font-size: 13px; }

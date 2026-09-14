@@ -1,0 +1,5 @@
+.about-grid { display: grid; grid-template-columns: repeat(4,1fr); overflow: hidden; border: 1px solid var(--border); border-radius: 22px; background: white; }
+.about-grid article { padding: 28px; border-right: 1px solid var(--border); }
+.about-grid article:last-child { border-right: 0; }
+.about-grid strong { display: block; margin-bottom: 6px; font-size: 18px; }
+.about-grid p { color: var(--text-muted); font-size: 13px; }
