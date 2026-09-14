@@ -3,13 +3,9 @@
 @import "./components.css";
 @import "./sections/header.css";
 @import "./sections/hero.css";
-@import "./sections/about.css";
+@import "./sections/skills.css";
 @import "./sections/projects.css";
-@import "./sections/capabilities.css";
-@import "./sections/experience.css";
-@import "./sections/research.css";
-@import "./sections/writing.css";
-@import "./sections/cooperation.css";
+@import "./sections/papers.css";
 @import "./sections/contact.css";
 @import "./sections/footer.css";
 @import "./responsive.css";

@@ -1,32 +1,21 @@
 import { projects } from "../data/projects.js";
-
-function renderCard(project) {
-  const tags = project.technologies.map(x => `<span class="tag">${x}</span>`).join("");
-  const results = project.results.map(([value, label]) => `
-    <div><strong>${value}</strong><span>${label}</span></div>
-  `).join("");
-
-  return `
-    <article class="project-card reveal">
-      <div class="project-visual">
-        <img src="${project.image}" alt="${project.title} 项目示意图" loading="lazy" />
-        <span class="project-badge">${project.badge}</span>
-      </div>
-      <div class="project-content">
-        <span class="project-number">PROJECT ${project.number}</span>
-        <h3>${project.title}</h3>
-        <p class="project-subtitle">${project.subtitle}</p>
-        <p class="project-summary">${project.summary}</p>
-        <div class="project-tags">${tags}</div>
-        <div class="project-results">${results}</div>
-        <a class="project-link" href="${project.link}">查看完整项目 →</a>
-      </div>
-    </article>
-  `;
-}
-
 export function renderProjects() {
   const el = document.getElementById("project-list");
   if (!el) return;
-  el.innerHTML = projects.map(renderCard).join("");
+  el.innerHTML = projects.map(item => `
+    <article class="project-card reveal">
+      <div class="project-cover"><img src="${item.image}" alt="${item.title}" loading="lazy"></div>
+      <div class="project-body">
+        <span class="project-number">PROJECT ${item.number}</span>
+        <h3>${item.title}</h3>
+        <p class="project-sub">${item.subtitle}</p>
+        <p>${item.summary}</p>
+        <div class="project-tags">${item.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}</div>
+        <div class="project-links">
+          <a href="${item.pageLink}">项目说明</a>
+          <a href="${item.videoLink}" target="_blank" rel="noreferrer">演示视频</a>
+        </div>
+      </div>
+    </article>
+  `).join("");
 }

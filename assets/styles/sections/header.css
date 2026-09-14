@@ -1,57 +1,13 @@
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  height: 72px;
-  background: rgba(245,247,251,.88);
-  border-bottom: 1px solid rgba(227,232,239,.85);
-  backdrop-filter: blur(18px);
+  position: sticky; top: 0; z-index: 50; height: 70px;
+  background: rgba(247,248,250,.88); border-bottom: 1px solid rgba(228,232,239,.88); backdrop-filter: blur(16px);
 }
-.header-inner {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 26px;
-}
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 800;
-}
-.brand-mark {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--dark);
-  color: white;
-  font-size: 11px;
-}
-.main-nav { display: flex; gap: 28px; }
-.main-nav a {
-  color: #5f6b7b;
-  font-size: 13px;
-  font-weight: 600;
-}
+.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; }
+.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; background: var(--dark); color: white; border-radius: 10px; font-size: 11px; }
+.main-nav { display: flex; gap: 26px; }
+.main-nav a { color: #667085; font-size: 14px; font-weight: 600; }
 .main-nav a:hover { color: var(--text); }
 .header-actions { display: flex; align-items: center; gap: 10px; }
-.header-contact {
-  padding: 10px 16px;
-  border-radius: 9px;
-  color: white;
-  background: var(--dark);
-  font-size: 13px;
-  font-weight: 700;
-}
-.menu-button {
-  display: none;
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--line);
-  border-radius: 9px;
-  background: white;
-  cursor: pointer;
-}
+.header-link { padding: 10px 14px; background: var(--dark); color: white; border-radius: 9px; font-size: 13px; font-weight: 700; }
+.menu-button { display: none; width: 40px; height: 40px; border-radius: 9px; border: 1px solid var(--line); background: white; cursor: pointer; }

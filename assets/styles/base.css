@@ -1,33 +1,30 @@
 :root {
-  --page-width: 1180px;
-  --bg: #f5f7fb;
+  --page: 1120px;
+  --bg: #f7f8fa;
   --surface: #ffffff;
-  --surface-soft: #edf2f8;
+  --surface-soft: #eef2f6;
   --text: #101828;
   --text-2: #475467;
-  --text-3: #7d8899;
-  --line: #e3e8ef;
+  --text-3: #7a8596;
+  --line: #e4e8ef;
   --blue: #2f6fed;
-  --blue-soft: #edf3ff;
   --dark: #101828;
-  --dark-2: #172235;
-  --green: #18a76b;
-  --radius-sm: 10px;
-  --radius-md: 18px;
-  --radius-lg: 28px;
-  --shadow: 0 18px 55px rgba(16, 24, 40, .08);
+  --green: #16a166;
+  --radius: 18px;
+  --radius-lg: 26px;
+  --shadow: 0 16px 45px rgba(16,24,40,.08);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 body {
   min-height: 100vh;
-  font-family: Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; text-decoration: none; }
-button, input, textarea { font: inherit; }
-img { max-width: 100%; display: block; }
+img { display: block; max-width: 100%; }
 ul { list-style: none; }
+button { font: inherit; }

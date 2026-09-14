@@ -1,0 +1,11 @@
+.paper-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.paper-card {
+  overflow: hidden; background: white; border: 1px solid var(--line); border-radius: 18px;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.paper-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.paper-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #101828; }
+.paper-body { padding: 18px; }
+.paper-body h3 { margin-bottom: 8px; font-size: 17px; line-height: 1.35; }
+.paper-body p { color: var(--text-2); font-size: 13px; }
+.paper-body a { display: inline-flex; margin-top: 12px; color: var(--blue); font-size: 13px; font-weight: 700; }
